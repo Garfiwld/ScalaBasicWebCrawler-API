@@ -24,14 +24,14 @@ company/horganice_logo.png
 
 ## Franework & Extension library
 
-1.Scala (Java 8)
-2.Play framework (Java 8)
-3.Jsoup 1.14.1
-4.Gson 2.8.7
+1. Scala (Java 8)
+2. Play framework (Java 8)
+3. Jsoup 1.14.1
+4. Gson 2.8.7
 
 ## Build and run the project
 
-1.> sbt
+1. > sbt
 
 2. [ScalaBasicWebCrawler-API] $ run
 
