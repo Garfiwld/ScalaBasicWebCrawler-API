@@ -1,5 +1,4 @@
 # ScalaBasicWebCrawler-API
-## Basic Web Crawler
 ##### [4.1] Extract Data from Source HTML
 1. เขียนโปรแกรมเพื่อดึงข้อมูล URL ของ Logo ทุกบริษัท ที่อยู่ในส่วน “ใครมาบ้าง / PARTICIPATING STARTUPS” 
 ในเว็บไซต์ The Internship (https://theinternship.io/) โดยข้อมูลต้นทางจะเป็น HTML และมีข้อมูลที่เป็น
@@ -11,7 +10,7 @@ company/wisible_logo.png
 company/codeapp_logo.png 
 company/horganice_logo.png 
 …
-##### [4.2 - Optional] Extract Data from Source HTML
+#### [4.2 - Optional] Extract Data from Source HTML
  - มี Route คือ /companies และรองรับเฉพาะ GET Request 
  - เมื่อเรียก API แล้วจะได้ JSON ที่มีโครงสร้างดังตัวอย่าง
  { "companies" : [ 
