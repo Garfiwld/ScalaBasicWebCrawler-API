@@ -15,11 +15,11 @@ object ScalaBasicWebCrawler {
     val esPartner = doc.getElementsByClass("partner").asScala
     for (ePartner: Element <- esPartner) {
       val getWeb = new GetWeb
-      val srcLogo: String = ePartner.getElementsByTag("img").attr("src")
+      val srcLogo: String = ePartner.getElementsByTag("img").attr("abs:src")
       val textBox: String = ePartner.getElementsByClass("list-company").text()
       val textBoxLength: Int = 9999999 - textBox.length
       getWeb.setTextBoxLength(textBoxLength)
-      getWeb.setSrcLogo(url+srcLogo)
+      getWeb.setSrcLogo(srcLogo)
       listGetWeb.add(getWeb)
     }
     Collections.sort(listGetWeb)
