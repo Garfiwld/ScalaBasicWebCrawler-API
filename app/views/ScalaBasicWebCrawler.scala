@@ -17,7 +17,7 @@ object ScalaBasicWebCrawler {
       val getWeb = new GetWeb
       val srcLogo: String = ePartner.getElementsByTag("img").attr("abs:src")
       val textBox: String = ePartner.getElementsByClass("list-company").text()
-      val textBoxLength: Int = 9999999 - textBox.length
+      val textBoxLength: Int = textBox.length
       getWeb.setTextBoxLength(textBoxLength)
       getWeb.setSrcLogo(srcLogo)
       listGetWeb.add(getWeb)
