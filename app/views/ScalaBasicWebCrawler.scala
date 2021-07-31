@@ -10,7 +10,8 @@ object ScalaBasicWebCrawler {
 
   def resScalaBasicWebCrawler(): ModelCompanies = {
     val listGetWeb = new ArrayList[GetWeb]
-    val doc: Document = Jsoup.connect("https://theinternship.io/").get()
+    val url:String = "https://theinternship.io/"
+    val doc: Document = Jsoup.connect(url).get()
     val esPartner = doc.getElementsByClass("partner").asScala
     for (ePartner: Element <- esPartner) {
       val getWeb = new GetWeb
@@ -18,7 +19,7 @@ object ScalaBasicWebCrawler {
       val textBox: String = ePartner.getElementsByClass("list-company").text()
       val textBoxLength: Int = 9999999 - textBox.length
       getWeb.setTextBoxLength(textBoxLength)
-      getWeb.setSrcLogo(srcLogo)
+      getWeb.setSrcLogo(url+srcLogo)
       listGetWeb.add(getWeb)
     }
     Collections.sort(listGetWeb)
