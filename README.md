@@ -14,7 +14,7 @@ URL ของ Logo แต่ละบริษัทอยู่
  { "logo": "https://theinternship.io/company/codeapp_logo.png"} 
  ] }
 
-## Franework & Extension library
+## Framework & Extension library
 
 1. Scala (Java 8)
 2. Play framework (Java 8)
